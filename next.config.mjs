@@ -13,9 +13,13 @@ const withMDX = require("@next/mdx")({
     // providerImportSource: "@mdx-js/react",
   },
 });
+
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+  assetPrefix: "./",
 };
 module.exports = withMDX({
   // Append the default value with md extensions
