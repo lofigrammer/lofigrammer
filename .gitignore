@@ -30,8 +30,6 @@ build/Release
 node_modules
 jspm_packages
 
-# Optional npm cache directory
-.npm
 
 # Optional REPL history
 .node_repl_history
@@ -132,8 +130,6 @@ results
 build
 node_modules
 .node_history
-package-lock.json
-**/package-lock.json
 !docs/package-lock.json
 *.heapsnapshot
 
