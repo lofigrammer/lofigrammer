@@ -28,7 +28,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_BASE_PATH: /lofigramer
+      NEXT_PUBLIC_BASE_PATH: /lofigrammer
     steps:
       - name: Checkout
         uses: actions/checkout@v3
