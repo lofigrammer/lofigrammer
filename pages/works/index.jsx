@@ -1,3 +1,4 @@
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 import React, { useState } from "react";
 import Image from "next/image";
 import fs from "fs";
@@ -23,7 +24,7 @@ const Works = ({ projects }) => {
                   }
                 >
                   <Image
-                    src={"/" + slug + ".gif"}
+                    src={prefix + "/" + slug + ".gif"}
                     layout="fill"
                     objectFit="cover"
                     alt={title}
