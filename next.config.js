@@ -18,8 +18,4 @@ const nextConfig = {
   assetPrefix: assetPrefix,
   basePath: basePath,
 };
-module.exports = withMDX({
-  // Append the default value with md extensions
-  pageExtensions: ["ts", "tsx", "jsx", "md", "mdx"],
-});
 module.exports = nextConfig;
