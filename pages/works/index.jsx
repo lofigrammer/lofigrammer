@@ -23,11 +23,7 @@ const Works = ({ projects }) => {
                   }
                 >
                   <Image
-                    src={
-                      "/" +
-                      slug +
-                      (slug == "perlinnoise_and_flowfields" ? ".gif" : ".png")
-                    }
+                    src={"/" + slug + ".gif"}
                     layout="fill"
                     objectFit="cover"
                     alt={title}
