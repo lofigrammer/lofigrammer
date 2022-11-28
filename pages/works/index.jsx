@@ -15,12 +15,13 @@ const Works = ({ projects }) => {
             <div key={id} className="mt-6  grid items-start ">
               <div
                 className={
-                  " flex items-center " + (i % 2 == 0 ? "flex-row-reverse" : "")
+                  "laptop:flex mobile:grid mobile:gap-8 items-center " +
+                  (i % 2 == 0 ? "flex-row-reverse" : "")
                 }
               >
                 <div
                   className={
-                    "relative -z-10 border-apricot border-2 rounded-2xl overflow-hidden w-2/3 h-96 "
+                    "relative -z-10 border-apricot border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
                   }
                 >
                   <Image
@@ -32,7 +33,7 @@ const Works = ({ projects }) => {
                 </div>
                 <div
                   className={
-                    "h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-apricot rounded-2xl flex items-start text-white " +
+                    "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-apricot rounded-2xl flex items-start text-white laptop:" +
                     (i % 2 == 0 ? "mr-6" : "ml-6")
                   }
                 >
@@ -47,7 +48,7 @@ const Works = ({ projects }) => {
                         </span>
                       </div>
                     </div>
-                    <div className="p-8 h-[16.3rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
+                    <div className="mobile:mb-0 p-8 h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
                       <p className="text-base tracking-normal">{content}</p>
                     </div>
                   </div>

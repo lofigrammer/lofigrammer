@@ -5,6 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      mobile: "200px",
+      laptop: "1024px",
+      desktop: "1280px",
+    },
     extend: {
       fontFamily: {
         "fredoka-one": ['"Fredoka One"', "cursive"],
