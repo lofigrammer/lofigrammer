@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Works = ({ projects }) => {
   return (
-    <div className="grid  overflow-hidden items-center justify-center w-9/12 m-auto h-[calc(100vh_-_11rem)]">
+    <div className="grid  overflow-hidden items-center justify-center mobile:w-[calc(100vw_-_2.5rem)] laptop:w-9/12 m-auto h-[calc(100vh_-_11rem)]">
       <div className="grid border-4 border-[#002b36] rounded-xl overflow-auto h-full ">
         {projects.map(({ id, slug, title, link, content }, i) => {
           return (
