@@ -48,7 +48,7 @@ const Works = ({ projects }) => {
                         </span>
                       </div>
                     </div>
-                    <div className="mobile:mb-0 p-8 h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
+                    <div className="mobile:mb-0 p-8 laptop:h-[15.7rem] mobile:h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
                       <p className="text-base tracking-normal">{content}</p>
                     </div>
                   </div>
