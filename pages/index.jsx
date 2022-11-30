@@ -38,7 +38,7 @@ const Home = () => {
       <div className="mb-40 h-[21rem] flex flex-col justify-between items-center shadow-card bg-violet p-6 rounded-2xl hover:px-20">
         <div>
           <a
-            href="https://github.com/ankankhateseli"
+            href="https://github.com/ankankhateseli/"
             rel="noreferrer"
             target={"_blank"}
           >
@@ -46,16 +46,40 @@ const Home = () => {
           </a>
         </div>
         <div>
-          <Linkedin />
+          <a
+            href="https://www.linkedin.com/in/ankankhateseli/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <Linkedin />
+          </a>
         </div>
         <div>
-          <Twitter />
+          <a
+            href="https://twitter.com/ankankhateseli/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <Twitter />
+          </a>
         </div>
         <div>
-          <Telegram />
+          <a
+            href="https://t.me/ankankhateseli/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <Telegram />
+          </a>
         </div>
         <div>
-          <Instagram />
+          <a
+            href="http://instagram.com/lofigrammer/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            <Instagram />
+          </a>
         </div>
       </div>
     </div>
