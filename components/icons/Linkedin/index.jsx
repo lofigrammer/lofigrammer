@@ -4,7 +4,7 @@ const Linkedin = () => {
       type="button"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
-      className="inline-block p-4 text-white bg-apricot font-medium text-xs  uppercase rounded-2xl  hover:px-12"
+      className="inline-block p-4 text-base3 bg-apricot font-medium text-xs  uppercase rounded-2xl  hover:px-12"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

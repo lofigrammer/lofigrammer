@@ -19,10 +19,10 @@ module.exports = {
         bgPhoto: "url('/bg.jpg')",
       },
       backgroundColor: {
-        apricot: "#b300b3",
+        apricot: "#6c71c4",
       },
       boxShadow: {
-        card: "inset 0px 0px 5px 3px rgba(129, 0, 129, 1)",
+        card: "inset 0px 0px 5px 3px #595ead",
       },
       colors: {
         ownBlue: "rgba(224, 157, 11, 1)",
@@ -31,7 +31,7 @@ module.exports = {
         apricot: "#b300b3",
       },
       textColor: {
-        "favorite-purple": "#531752",
+        base3: "#fdf6e3",
       },
     },
   },

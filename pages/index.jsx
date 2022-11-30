@@ -24,13 +24,13 @@ const Home = () => {
             />
           </div>
           <div className="bg-apricot p-6 rounded-2xl h-[calc(200px+3rem)]  shadow-card grid items-center hover:p-16">
-            <h2 className="font-fredoka-one  text-white text-center text-3xl">
+            <h2 className="font-fredoka-one  text-base3 text-center text-3xl">
               Aram <br /> Khachatryan
             </h2>
           </div>
         </div>
         <div className="grid mt-4 bg-apricot p-6 rounded-2xl hover:py-10 shadow-card">
-          <div className="tracking-widest text-white font-fredoka-one text-center ">
+          <div className="tracking-widest text-base3 font-fredoka-one text-center ">
             <p>HI I'M ARAM AND I LOVE PROGRAMMING</p>
           </div>
         </div>
