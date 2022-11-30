@@ -38,7 +38,7 @@ const Home = () => {
       <div className="mb-40 h-[21rem] flex flex-col justify-between items-center shadow-card bg-apricot p-6 rounded-2xl hover:px-20">
         <div>
           <a
-            href="https://github.com/lofigrammer"
+            href="https://github.com/ankankhateseli"
             rel="noreferrer"
             target={"_blank"}
           >
