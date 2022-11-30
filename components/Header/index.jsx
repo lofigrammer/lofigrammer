@@ -9,7 +9,7 @@ const Header = () => {
   ];
   return (
     <div className="p-6 fixed top-0 left-0 right-0 z-50  bg-[#002b36]">
-      <header className="rounded-lg flex justify-between items-center p-5 h-24 shadow-card bg-apricot">
+      <header className="rounded-lg flex justify-between items-center p-5 h-24 shadow-card bg-violet">
         <div>
           <h1 className="text-2xl tracking-widest font-fredoka-one text-base3 uppercase">
             Ankankhateseli

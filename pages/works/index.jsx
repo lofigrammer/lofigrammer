@@ -21,7 +21,7 @@ const Works = ({ projects }) => {
               >
                 <div
                   className={
-                    "relative -z-10 border-apricot border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
+                    "relative -z-10 border-violet border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
                   }
                 >
                   <Image
@@ -33,13 +33,13 @@ const Works = ({ projects }) => {
                 </div>
                 <div
                   className={
-                    "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-apricot rounded-2xl flex items-start text-base3 laptop:" +
+                    "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-violet rounded-2xl flex items-start text-base3 laptop:" +
                     (i % 2 == 0 ? "mr-6" : "ml-6")
                   }
                 >
                   <div className="grid ">
                     <div className="flex justify-between items-center  border-4 bg-[#002b36] border-[#002b36]  rounded-lg">
-                      <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-apricot rounded-lg">
+                      <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-violet rounded-lg">
                         {title}
                       </div>
                       <div className="flex justify-center">

@@ -15,23 +15,18 @@ module.exports = {
         "fredoka-one": ['"Fredoka One"', "cursive"],
         roboto: ['"Roboto"', "sans-serif"],
       },
-      backgroundImage: {
-        bgPhoto: "url('/bg.jpg')",
-      },
       backgroundColor: {
-        apricot: "#6c71c4",
+        violet: "#6c71c4",
       },
       boxShadow: {
         card: "inset 0px 0px 5px 3px #595ead",
       },
-      colors: {
-        ownBlue: "rgba(224, 157, 11, 1)",
-      },
       borderColor: {
-        apricot: "#6c71c4",
+        violet: "#6c71c4",
       },
       textColor: {
         base3: "#fdf6e3",
+        magenta: "#2aa198",
       },
     },
   },

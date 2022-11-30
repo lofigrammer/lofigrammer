@@ -4,7 +4,7 @@ const Instagram = () => {
       type="button"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
-      className="inline-block p-4 text-base3 font-medium text-xs leading-tight uppercase rounded-2xl bg-apricot hover:px-12"
+      className="inline-block p-4 text-base3 font-medium text-xs leading-tight uppercase rounded-2xl bg-violet hover:px-12"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
