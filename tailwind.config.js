@@ -28,7 +28,7 @@ module.exports = {
         ownBlue: "rgba(224, 157, 11, 1)",
       },
       borderColor: {
-        apricot: "#b300b3",
+        apricot: "#6c71c4",
       },
       textColor: {
         base3: "#fdf6e3",
