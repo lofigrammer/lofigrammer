@@ -7,4 +7,5 @@
 
 * {
   transition: 0.3s;
+  cursor: none !important;
 }
