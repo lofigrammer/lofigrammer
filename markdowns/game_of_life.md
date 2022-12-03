@@ -2,8 +2,8 @@
 order: 2
 title: Game Of Life
 link: https://ankankhateseli.github.io/game_of_life
-workType: link
-cover: https://ankankhateseli.github.io/game_of_life
+workType: image
+cover: game_of_life.png
 tags: JavaScript, P5.js
 ---
 
