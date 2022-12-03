@@ -11,7 +11,7 @@ const Works = ({ projects }) => {
     <div className="grid  overflow-hidden items-center justify-center mobile:w-[calc(100vw_-_2.5rem)] laptop:w-9/12 m-auto h-[calc(100vh_-_11rem)]">
       <div className="grid border-4 border-[#002b36] rounded-xl overflow-auto h-full ">
         {projects.map(
-          ({ id, slug, title, link, content, workType, cover }, i) => {
+          ({ id, slug, title, link, content, workType, cover, tags }, i) => {
             return (
               <div key={id} className="mt-6  grid items-start ">
                 <div
@@ -48,7 +48,7 @@ const Works = ({ projects }) => {
                       (i % 2 == 0 ? "mr-6" : "ml-6")
                     }
                   >
-                    <div className="grid ">
+                    <div className="grid w-full">
                       <div className="flex justify-between items-center  border-4 bg-[#002b36] border-[#002b36]  rounded-lg">
                         <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-violet rounded-lg">
                           {title}
@@ -59,8 +59,18 @@ const Works = ({ projects }) => {
                           </span>
                         </div>
                       </div>
-                      <div className="mobile:mb-0 p-8 laptop:h-[15.7rem] mobile:h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
-                        <p className="text-base tracking-normal">{content}</p>
+                      <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
+                        <p className="text-left text-base tracking-normal whitespace-pre-line">
+                          <span className="flex">
+                            {tags.split(",").map((i) => (
+                              <span className="mr-2 border-2 p-2 rounded-md">
+                                {" "}
+                                {i}{" "}
+                              </span>
+                            ))}
+                          </span>
+                          {content}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -90,6 +100,7 @@ export async function getStaticProps() {
       content: content.content,
       workType: content.data.workType,
       cover: content.data.cover,
+      tags: content.data.tags,
     });
   });
 

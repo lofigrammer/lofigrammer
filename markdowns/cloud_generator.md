@@ -3,6 +3,8 @@ title: Cloud Generator
 link: https://ankankhateseli.github.io/cloud_generator
 workType: image
 cover: cloud_generator.png
+tags: JavaScript, P5.js
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada. Tincidunt nunc pulvinar sapien et ligula. Suscipit tellus mauris a diam maecenas sed enim ut. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Egestas fringilla phasellus faucibus scelerisque eleifend. Ultrices neque ornare aenean euismod. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Vitae turpis massa sed elementum. Placerat duis ultricies lacus sed turpis. Eget nunc lobortis mattis aliquam faucibus. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Mi quis hendrerit dolor magna eget est lorem. Eget dolor morbi non arcu. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Odio facilisis mauris sit amet massa vitae tortor condimentum. Luctus venenatis lectus magna fringilla.
+This Image was created with Perlin noise algorithm
+Perlin noise is most commonly implemented as a two-, three- or four-dimensional function, but can be defined for any number of dimensions. An implementation typically involves three steps: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets, and interpolation between these values.
