@@ -32,6 +32,7 @@ const Works = ({ projects }) => {
                         width="100%"
                         height="100%"
                         frameBorder="0"
+                        title={title}
                       ></iframe>
                     ) : (
                       <Image
