@@ -95,7 +95,7 @@ export async function getStaticProps() {
     projects.push({
       id: i,
       slug: file.replace(".md", ""),
-      order: 0 title: content.data.title,
+      title: content.data.title,
       link: content.data.link,
       content: content.content,
     });
