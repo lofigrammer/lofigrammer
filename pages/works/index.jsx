@@ -24,12 +24,18 @@ const Works = ({ projects }) => {
                     "relative -z-10 border-violet border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
                   }
                 >
-                  <Image
+                  <iframe
+                    src={link}
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                  ></iframe>
+                  {/* <Image
                     src={prefix + "/" + slug + ".gif"}
                     layout="fill"
                     objectFit="cover"
                     alt={title}
-                  />
+                  /> */}
                 </div>
                 <div
                   className={

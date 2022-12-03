@@ -25,7 +25,7 @@ const Home = () => {
           </div>
           <div className="bg-violet p-6 rounded-2xl h-[calc(200px+3rem)]  shadow-card grid items-center hover:p-16">
             <h2 className="font-fredoka-one  text-base3 text-center text-3xl">
-              Aram <br /> Khachatryan
+              Ankankhateseli
             </h2>
           </div>
         </div>

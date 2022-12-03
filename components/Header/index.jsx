@@ -12,7 +12,7 @@ const Header = () => {
       <header className="rounded-lg flex justify-between items-center p-5 h-24 shadow-card bg-violet">
         <div>
           <h1 className="text-2xl tracking-widest font-fredoka-one text-base3 uppercase">
-            Ankankhateseli
+            Aram Khachatryan
           </h1>
         </div>
         <div>
