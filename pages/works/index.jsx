@@ -50,7 +50,7 @@ const Works = ({ projects }) => {
                     </div>
                     <div
                       className={
-                        "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-violet rounded-2xl flex items-start text-base3 laptop:" +
+                        "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-violet rounded-2xl flex items-start text-white laptop:" +
                         (i % 2 == 0 ? "mr-6" : "ml-6")
                       }
                     >
@@ -60,7 +60,7 @@ const Works = ({ projects }) => {
                             {title}
                           </div>
                           <div className="flex justify-center">
-                            <span className="hover:text-base3 hover:bg-transparent  cursor-pointer bg-[#002b36] text-sm flex  p-4   uppercase">
+                            <span className="hover:text-white hover:bg-transparent  cursor-pointer bg-[#002b36] text-sm flex  p-4   uppercase">
                               <Link href={link}>See </Link>
                             </span>
                           </div>
