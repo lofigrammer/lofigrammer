@@ -14,7 +14,7 @@ const Works = ({ projects }) => {
         <title>Ankankhateseli - Works</title>
       </Head>
       <div className="grid  overflow-hidden items-center justify-center mobile:w-[calc(100vw_-_2.5rem)] laptop:w-9/12 m-auto h-[calc(100vh_-_11rem)]">
-        <div className="grid border-4 border-[#002b36] rounded-xl overflow-auto h-full ">
+        <div className="grid border-4 border-violet rounded-xl overflow-auto h-full ">
           {projects.map(
             ({ id, slug, title, link, content, workType, cover, tags }, i) => {
               return (
@@ -27,7 +27,7 @@ const Works = ({ projects }) => {
                   >
                     <div
                       className={
-                        "relative -z-10 border-violet border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
+                        "relative -z-10 border-[#002b36] bg-[#002b36]  border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
                       }
                     >
                       {workType === "link" ? (
@@ -50,13 +50,13 @@ const Works = ({ projects }) => {
                     </div>
                     <div
                       className={
-                        "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-violet rounded-2xl flex items-start text-white laptop:" +
+                        "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-[#002b36] rounded-2xl flex items-start text-white laptop:" +
                         (i % 2 == 0 ? "mr-6" : "ml-6")
                       }
                     >
                       <div className="grid w-full">
-                        <div className="flex justify-between items-center  border-4 bg-[#002b36] border-[#002b36]  rounded-lg">
-                          <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-violet rounded-lg">
+                        <div className="flex justify-between items-center  border-4 bg-[#002b36] border-violet  rounded-lg">
+                          <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-[#002b36] rounded-lg">
                             {title}
                           </div>
                           <div className="flex justify-center">
@@ -65,7 +65,7 @@ const Works = ({ projects }) => {
                             </span>
                           </div>
                         </div>
-                        <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-auto border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
+                        <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-auto border-violet border-4 rounded-lg my-6 overflow-auto">
                           <p className="text-left text-base tracking-normal whitespace-pre-line">
                             <span className="flex">
                               {tags.split(",").map((i, j) => (

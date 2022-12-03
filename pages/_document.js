@@ -9,7 +9,7 @@ const Document = () => (
 
       <meta name="robots" content="index, follow" />
     </Head>
-    <body className="bg-[#002b36] overflow-hidden">
+    <body className="bg-[#595ead] overflow-hidden">
       <Main />
       <NextScript />
     </body>

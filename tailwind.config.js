@@ -19,10 +19,10 @@ module.exports = {
         violet: "#6c71c4",
       },
       boxShadow: {
-        card: "inset 0px 0px 5px 3px #595ead",
+        card: "inset 0px 0px 5px 3px #011a21",
       },
       borderColor: {
-        violet: "#6c71c4",
+        violet: "rgba(89, 94, 173, 1)",
       },
       textColor: {
         base3: "#fdf6e3",

@@ -4,7 +4,7 @@ const Github = () => {
       type="button"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
-      className="inline-block   p-4 bg-violet text-white font-medium text-xs leading-tight uppercase rounded-2xl focus:shadow-lg focus:outline-none focus:ring-0 hover:px-12"
+      className="inline-block   p-4 bg-[#002b36] text-white font-medium text-xs leading-tight uppercase rounded-2xl focus:shadow-lg focus:outline-none focus:ring-0 hover:px-12"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
