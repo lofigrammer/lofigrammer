@@ -62,8 +62,11 @@ const Works = ({ projects }) => {
                       <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
                         <p className="text-left text-base tracking-normal whitespace-pre-line">
                           <span className="flex">
-                            {tags.split(",").map((i) => (
-                              <span className="mr-2 border-2 p-2 rounded-md">
+                            {tags.split(",").map((i, j) => (
+                              <span
+                                key={j}
+                                className="mr-2 border-2 p-2 rounded-md"
+                              >
                                 {" "}
                                 {i}{" "}
                               </span>
