@@ -1,4 +1,5 @@
 ---
+order: 5
 title: Interactive Map
 link: https://mediafactoryam.github.io/search-works/index.html
 workType: image

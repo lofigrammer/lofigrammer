@@ -1,4 +1,5 @@
 ---
+order: 7
 title: GOL Character Direction
 link: https://ankankhateseli.github.io/gol_character_direction/
 workType: image

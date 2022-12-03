@@ -1,4 +1,5 @@
 ---
+order: 8
 title: Cloud Generator
 link: https://ankankhateseli.github.io/cloud_generator
 workType: image

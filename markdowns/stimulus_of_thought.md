@@ -1,4 +1,5 @@
 ---
+order: 1
 title: Stimulus Of Thought
 link: https://sot-mz.com
 workType: image

@@ -1,4 +1,5 @@
 ---
+order: 2
 title: Game Of Life
 link: https://ankankhateseli.github.io/game_of_life
 workType: link

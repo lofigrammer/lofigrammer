@@ -85,7 +85,7 @@ const Works = ({ projects }) => {
 };
 
 export async function getStaticProps() {
-  const projects = [];
+  let projects = [];
   const MDS_PATHS = path.join("markdowns");
   const files = fs.readdirSync(MDS_PATHS);
 
@@ -96,6 +96,7 @@ export async function getStaticProps() {
       id: i,
       slug: file.replace(".md", ""),
       title: content.data.title,
+      order: content.data.order,
       link: content.data.link,
       content: content.content,
       workType: content.data.workType,
@@ -103,7 +104,7 @@ export async function getStaticProps() {
       tags: content.data.tags,
     });
   });
-
+  projects = projects.sort((a, b) => a.order - b.order);
   return {
     props: {
       projects,
