@@ -27,22 +27,24 @@ const Works = ({ projects }) => {
                   >
                     <div
                       className={
-                        "relative -z-10 border-[#002b36] bg-[#002b36]  border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
+                        "relative -z-10 border-[#002b36] bg-[#002b36] grid items-center border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
                       }
                     >
                       {workType === "link" ? (
                         <iframe
                           src={link}
                           className="bg-white"
-                          width="100%"
-                          height="100%"
+                          width={200}
+                          height={200}
                           frameBorder="0"
                           title={title}
                         ></iframe>
                       ) : (
                         <Image
                           src={prefix + "/" + cover}
-                          layout="fill"
+                          layout="responsive"
+                          width={500}
+                          height={300}
                           objectFit="contain"
                           alt={title}
                         />
