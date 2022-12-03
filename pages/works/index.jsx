@@ -31,7 +31,7 @@ const Works = ({ projects }) => {
                         className="bg-white"
                         width="100%"
                         height="100%"
-                        frameborder="0"
+                        frameBorder="0"
                       ></iframe>
                     ) : (
                       <Image
