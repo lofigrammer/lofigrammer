@@ -10,60 +10,65 @@ const Works = ({ projects }) => {
   return (
     <div className="grid  overflow-hidden items-center justify-center mobile:w-[calc(100vw_-_2.5rem)] laptop:w-9/12 m-auto h-[calc(100vh_-_11rem)]">
       <div className="grid border-4 border-[#002b36] rounded-xl overflow-auto h-full ">
-        {projects.map(({ id, slug, title, link, content }, i) => {
-          return (
-            <div key={id} className="mt-6  grid items-start ">
-              <div
-                className={
-                  "laptop:flex mobile:grid mobile:gap-8 items-center " +
-                  (i % 2 == 0 ? "flex-row-reverse" : "")
-                }
-              >
+        {projects.map(
+          ({ id, slug, title, link, content, workType, cover }, i) => {
+            return (
+              <div key={id} className="mt-6  grid items-start ">
                 <div
                   className={
-                    "relative -z-10 border-violet border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
+                    "laptop:flex mobile:grid mobile:gap-8 items-center " +
+                    (i % 2 == 0 ? "flex-row-reverse" : "")
                   }
                 >
-                  <iframe
-                    src={link}
-                    className="bg-white"
-                    width="100%"
-                    height="100%"
-                    frameborder="0"
-                  ></iframe>
-                  {/* <Image
-                    src={prefix + "/" + slug + ".gif"}
-                    layout="fill"
-                    objectFit="cover"
-                    alt={title}
-                  /> */}
-                </div>
-                <div
-                  className={
-                    "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-violet rounded-2xl flex items-start text-base3 laptop:" +
-                    (i % 2 == 0 ? "mr-6" : "ml-6")
-                  }
-                >
-                  <div className="grid ">
-                    <div className="flex justify-between items-center  border-4 bg-[#002b36] border-[#002b36]  rounded-lg">
-                      <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-violet rounded-lg">
-                        {title}
+                  <div
+                    className={
+                      "relative -z-10 border-violet border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
+                    }
+                  >
+                    {workType === "link" ? (
+                      <iframe
+                        src={link}
+                        className="bg-white"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                      ></iframe>
+                    ) : (
+                      <Image
+                        src={prefix + "/" + cover}
+                        layout="fill"
+                        objectFit="contain"
+                        alt={title}
+                      />
+                    )}
+                  </div>
+                  <div
+                    className={
+                      "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-violet rounded-2xl flex items-start text-base3 laptop:" +
+                      (i % 2 == 0 ? "mr-6" : "ml-6")
+                    }
+                  >
+                    <div className="grid ">
+                      <div className="flex justify-between items-center  border-4 bg-[#002b36] border-[#002b36]  rounded-lg">
+                        <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-violet rounded-lg">
+                          {title}
+                        </div>
+                        <div className="flex justify-center">
+                          <span className="hover:text-base3 hover:bg-transparent  cursor-pointer bg-[#002b36] text-sm flex  p-4   uppercase">
+                            <Link href={link}>See </Link>
+                          </span>
+                        </div>
                       </div>
-                      <div className="flex justify-center">
-                        <span className="hover:text-base3 hover:bg-transparent  cursor-pointer bg-[#002b36] text-sm flex  p-4   uppercase">
-                          <Link href={link}>See </Link>
-                        </span>
+                      <div className="mobile:mb-0 p-8 laptop:h-[15.7rem] mobile:h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
+                        <p className="text-base tracking-normal">{content}</p>
                       </div>
-                    </div>
-                    <div className="mobile:mb-0 p-8 laptop:h-[15.7rem] mobile:h-[22.8rem] border-[#002b36] border-4 rounded-lg my-6 overflow-auto">
-                      <p className="text-base tracking-normal">{content}</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          }
+        )}
       </div>
     </div>
   );
@@ -83,6 +88,8 @@ export async function getStaticProps() {
       title: content.data.title,
       link: content.data.link,
       content: content.content,
+      workType: content.data.workType,
+      cover: content.data.cover,
     });
   });
 
