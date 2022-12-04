@@ -12,7 +12,7 @@ const Works = ({ projects }) => {
       <Head>
         <title>Ankankhateseli - Works</title>
       </Head>
-      <div className="grid  overflow-hidden items-center justify-center mobile:w-[calc(100vw_-_2.5rem)] laptop:w-9/12 m-auto h-[calc(100vh_-_11rem)]">
+      <div className="grid  overflow-hidden laptop:items-center mobile:items-start justify-center mobile:w-[calc(100vw_-_2.5rem)] laptop:w-9/12 m-auto h-[calc(100vh_-_11rem)] mobile:h-[calc(100vh_-_16rem)]">
         <div className="grid border-4 border-violet rounded-xl overflow-auto h-full ">
           {projects.map(
             ({ id, slug, title, link, content, workType, cover, tags }, i) => {
@@ -26,7 +26,7 @@ const Works = ({ projects }) => {
                   >
                     <div
                       className={
-                        "relative -z-10 border-[#002b36] bg-[#002b36] grid items-center border-2 rounded-2xl overflow-hidden laptop:w-2/3 h-96  mobile:w-full "
+                        "relative -z-10 border-[#002b36] bg-[#002b36] grid items-center border-2 rounded-2xl overflow-hidden laptop:w-2/3 laptop:h-96 mobile:h-56  mobile:w-full "
                       }
                     >
                       {workType === "link" ? (
