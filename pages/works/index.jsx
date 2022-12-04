@@ -1,4 +1,3 @@
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 import Head from "next/head";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -41,7 +40,7 @@ const Works = ({ projects }) => {
                         ></iframe>
                       ) : (
                         <Image
-                          src={prefix + "/" + cover}
+                          src={"/" + cover}
                           layout="responsive"
                           width={500}
                           height={300}

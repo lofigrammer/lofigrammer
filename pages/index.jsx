@@ -1,4 +1,3 @@
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 import Head from "next/head";
 import Image from "next/image";
 import Github from "../components/icons/Github";
@@ -22,7 +21,7 @@ const Home = () => {
             <div className="mr-4 bg-[#002b36] p-6 shadow-card rounded-2xl flex hover:p-10">
               <Image
                 className="rounded-full"
-                src={prefix + "/profile-picture.jpg"}
+                src={"/profile-picture.jpg"}
                 objectFit="cover"
                 alt="Avatar"
                 width={200}
