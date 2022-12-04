@@ -21,7 +21,7 @@ const Home = () => {
             <div className="mr-4 bg-[#002b36] p-6 shadow-card rounded-2xl flex hover:p-10">
               <Image
                 className="rounded-full"
-                src={"/profile-picture.jpg"}
+                src={"/profile-picture.webp"}
                 objectFit="cover"
                 alt="Avatar"
                 width={200}
