@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 const Document = () => (
   <Html lang="en">
@@ -12,15 +13,17 @@ const Document = () => (
     <body className="bg-[#595ead] overflow-hidden">
       <Main />
       <NextScript />
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2T2ELR8XSM"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-2T2ELR8XSM');
-      </script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'G-2T2ELR8XSM', 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
     </body>
   </Html>
 );
