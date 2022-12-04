@@ -41,9 +41,7 @@ const Works = ({ projects }) => {
                       ) : (
                         <Image
                           src={"/" + cover}
-                          layout="responsive"
-                          width={500}
-                          height={300}
+                          layout="fill"
                           objectFit="contain"
                           alt={title}
                         />
