@@ -3,7 +3,7 @@ order: 7
 title: GOL Character Direction
 link: https://ankankhateseli.github.io/gol_character_direction/
 workType: image
-cover: gol_character_direction.png
+cover: gol_character_direction.webp
 tags: JavaScript, P5.js, Jquery
 ---
 

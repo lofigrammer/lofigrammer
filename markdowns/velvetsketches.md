@@ -3,7 +3,7 @@ order: 9
 title: Velvet Sketches
 link: https://velvetsketches.media.am
 workType: image
-cover: velvetsketches.png
+cover: velvetsketches.webp
 tags: Jquery, HTML,CSS
 ---
 

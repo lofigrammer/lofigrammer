@@ -3,7 +3,7 @@ order: 6
 title: Tweets
 link: https://ankankhateseli-tweets.up.railway.app/
 workType: image
-cover: tweets.png
+cover: tweets.webp
 tags: Node.js , Socket, GoogleMapsAPI, TwitterAPI
 ---
 

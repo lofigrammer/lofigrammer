@@ -3,7 +3,7 @@ order: 8
 title: Cloud Generator
 link: https://ankankhateseli.github.io/cloud_generator
 workType: image
-cover: cloud_generator.png
+cover: cloud_generator.webp
 tags: JavaScript, P5.js
 ---
 
