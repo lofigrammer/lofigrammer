@@ -12,6 +12,15 @@ const Document = () => (
     <body className="bg-[#595ead] overflow-hidden">
       <Main />
       <NextScript />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2T2ELR8XSM"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-2T2ELR8XSM');
+      </script>
     </body>
   </Html>
 );
