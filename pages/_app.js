@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       <DotRing />
       <div className="relative grid overflow-hidden mobile:grid-rows-layout-mobile laptop:grid-rows-layout-laptop">
         <Header menu={menu} />
-        <div className="h-full grid mobile:mx-6 border-violet rounded-2xl border-4 mobile:w-full laptop:w-3/4 laptop:m-auto">
+        <div className="h-full grid mobile:mx-6 border-violet rounded-2xl border-4  laptop:w-3/4 laptop:m-auto">
           <Component {...pageProps} />
         </div>
         <div className="laptop:hidden mobile:grid">
