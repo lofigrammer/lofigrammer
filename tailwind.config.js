@@ -11,6 +11,10 @@ module.exports = {
       desktop: "1280px",
     },
     extend: {
+      gridTemplateRows: {
+        "layout-mobile": "9rem calc(100vh - 18rem) 9rem",
+        "layout-laptop": "9rem calc(100vh - 9rem)",
+      },
       fontFamily: {
         "fredoka-one": ['"Fredoka One"', "cursive"],
         roboto: ['"Roboto"', "sans-serif"],

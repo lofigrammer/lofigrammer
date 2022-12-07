@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 const MobileMenu = ({ menu }) => {
   const router = useRouter();
   return (
-    <div className="p-6 fixed bottom-0 left-0 right-0 z-50  bg-[#595ead]">
-      <header className="rounded-lg flex items-center justify-center p-5 h-24 shadow-card bg-[#002b36]">
+    <div className=" bg-[#595ead] px-6 grid items-center">
+      <header className="rounded-2xl flex items-center justify-center p-5 h-24 shadow-card bg-[#002b36]">
         <div>
           <ul className="flex">
             {menu.map(({ path, name }, key) => (
