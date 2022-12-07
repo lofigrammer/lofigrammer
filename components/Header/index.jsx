@@ -1,12 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Header = () => {
+const Header = ({ menu }) => {
   const router = useRouter();
-  const menu = [
-    { path: "/", name: "Home" },
-    { path: "/works", name: "Works" },
-  ];
+
   return (
     <div className="p-6 fixed top-0 left-0 right-0 z-50  bg-[#595ead]">
       <header className="rounded-lg flex laptop:justify-between mobile:justify-center items-center p-5 h-24 shadow-card bg-[#002b36]">
