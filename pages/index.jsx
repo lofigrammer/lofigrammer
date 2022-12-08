@@ -15,32 +15,33 @@ const Home = () => {
         <title>Ankankhateseli</title>
       </Head>
 
-      <div className="grid items-center justify-center grid-cols-[max-content_6rem]">
-        <div className="mb-40 p-6 pr-4 ">
-          <div className="flex items-center ">
-            <div className="mr-4 bg-[#002b36] p-6 shadow-card rounded-2xl flex hover:p-10">
-              <Image
-                className="rounded-full"
-                src={"/profile-picture.webp"}
-                objectFit="cover"
-                alt="Avatar"
-                width={200}
-                height={200}
-              />
+      <div className="laptop:grid laptop:items-center laptop:justify-center laptop:grid-cols-[max-content_6rem] mobile:block">
+        <div className="laptop:mb-40 laptop:p-6 laptop:pr-4 ">
+          <div className="mobile:grid laptop:flex laptop:items-center ">
+            <div className="laptop:mr-4 bg-[#002b36] p-6 shadow-card rounded-2xl flex laptop:hover:p-10  mobile:grid mobile:justify-center">
+              <div className="relative laptop:w-[200px] laptop:h-[200px] mobile:w-[400px] mobile:h-[400px]">
+                <Image
+                  className="rounded-full"
+                  src={"/profile-picture.webp"}
+                  objectFit="cover"
+                  alt="Avatar"
+                  layout="fill"
+                />
+              </div>
             </div>
-            <div className="bg-[#002b36] p-6 rounded-2xl h-[calc(200px+3rem)]  shadow-card grid items-center hover:p-16">
+            <div className="mobile:mt-8 laptop:mt-0 bg-[#002b36] laptop:p-6 rounded-2xl h-[calc(200px+3rem)]  shadow-card grid items-center hover:p-16">
               <h2 className="font-fredoka-one  text-white text-center text-3xl">
                 Ankankhateseli
               </h2>
             </div>
           </div>
-          <div className="grid mt-4 bg-[#002b36] p-6 rounded-2xl hover:py-10 shadow-card">
-            <div className="tracking-widest text-white font-fredoka-one text-center ">
+          <div className="grid laptop:mt-4 bg-[#002b36] laptop:p-6 rounded-2xl laptop:hover:py-10 shadow-card mobile:mt-8 mobile:py-11">
+            <div className="tracking-widest text-white font-fredoka-one text-center mobile:text-2xl">
               <p>The Future Is Unpredictable</p>
             </div>
           </div>
         </div>
-        <div className="mb-40 h-[21rem] flex flex-col justify-between items-center shadow-card bg-[#002b36] p-6 rounded-2xl hover:px-20">
+        <div className="mobile:h-28 mobile:mt-8 laptop:mt-0 laptop:mb-40 laptop:h-[21rem] flex laptop:flex-col justify-between items-center shadow-card bg-[#002b36] p-6 rounded-2xl laptop:hover:px-20">
           <div>
             <a
               href="https://github.com/ankankhateseli/"
