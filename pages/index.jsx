@@ -15,7 +15,7 @@ const Home = () => {
         <title>Ankankhateseli</title>
       </Head>
 
-      <div className="laptop:grid mobile:overflow-auto laptop:items-center laptop:justify-center laptop:grid-cols-[max-content_6rem] mobile:block">
+      <div className="border-2 border-violet rounded-xl laptop:grid mobile:overflow-auto laptop:items-center laptop:justify-center laptop:grid-cols-[max-content_6rem] mobile:block">
         <div className="laptop:mb-40 laptop:p-6 laptop:pr-4 ">
           <div className="mobile:grid laptop:flex laptop:items-center ">
             <div className="laptop:mr-4 bg-[#002b36] p-6 shadow-card rounded-2xl flex laptop:hover:p-10  mobile:grid mobile:justify-center">
