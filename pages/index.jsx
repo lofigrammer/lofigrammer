@@ -35,13 +35,13 @@ const Home = () => {
               </h2>
             </div>
           </div>
-          <div className="grid laptop:mt-4 bg-[#002b36] laptop:p-6 rounded-2xl laptop:hover:py-10 shadow-card mobile:mt-8 mobile:py-11">
-            <div className="tracking-widest text-white font-fredoka-one text-center mobile:text-2xl">
+          <div className="grid laptop:mt-4 bg-[#002b36] laptop:p-6 rounded-2xl laptop:hover:py-10 shadow-card mobile:mt-8 mobile:p-6">
+            <div className="tracking-widest text-white font-fredoka-one text-center mobile:text-lg">
               <p>The Future Is Unpredictable</p>
             </div>
           </div>
         </div>
-        <div className="mobile:h-28 mobile:mt-8 laptop:mt-0 laptop:mb-40 laptop:h-[21rem] flex laptop:flex-col justify-between items-center shadow-card bg-[#002b36] p-6 rounded-2xl laptop:hover:px-20">
+        <div className="mobile:h-24 mobile:mt-8 laptop:mt-0 laptop:mb-40 laptop:h-[21rem] flex laptop:flex-col justify-between items-center shadow-card bg-[#002b36] p-6 rounded-2xl laptop:hover:px-20">
           <div>
             <a
               href="https://github.com/ankankhateseli/"
