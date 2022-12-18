@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
-const assetPrefix = "/";
-const basePath = "/";
+const assetPrefix = "";
+const basePath = "";
 
 module.exports = {
   async headers() {
@@ -22,7 +22,7 @@ module.exports = {
 const nextConfig = {
   images: {
     loader: "akamai",
-    path: "/",
+    path: "",
   },
   assetPrefix: assetPrefix,
   basePath: basePath,
