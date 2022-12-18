@@ -1,12 +1,9 @@
-const ankankhateseli = () => {
-  return <>...</>;
+import { useEffect } from "react";
+
+const Ankankhateseli = () => {
+  useEffect(() => {
+    location.replace("/");
+  });
 };
-export const getStaticProps = async () => {
-  return {
-    redirect: {
-      destination: "/",
-      permanent: false,
-    },
-  };
-};
-export default ankankhateseli;
+
+export default Ankankhateseli;
