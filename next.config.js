@@ -20,6 +20,15 @@ module.exports = {
   },
 };
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/ankankhateseli",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     loader: "akamai",
     path: "",
