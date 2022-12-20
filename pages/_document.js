@@ -4,9 +4,9 @@ import Script from "next/script";
 const Document = () => (
   <Html lang="en">
     <Head>
-      <meta name="description" content="Ankankhateseli Portfolio" />
-      <meta name="author" content="Ankankhateseli" />
-      <meta name="keywords" content="Developer, Portfolio, Ankankhateseli" />
+      <meta name="description" content="kankhateseli Portfolio" />
+      <meta name="author" content="kankhateseli" />
+      <meta name="keywords" content="Developer, Portfolio, kankhateseli" />
 
       <meta name="robots" content="index, follow" />
     </Head>
