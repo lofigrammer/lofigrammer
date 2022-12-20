@@ -80,7 +80,7 @@ const Home = () => {
           </div>
           <div>
             <a
-              href="http://instagram.com/lofigrammer/"
+              href="http://instagram.com/kankhateseli/"
               rel="noreferrer"
               target={"_blank"}
             >
