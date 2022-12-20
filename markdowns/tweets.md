@@ -1,7 +1,7 @@
 ---
 order: 6
 title: Tweets
-link: https://dyoorin-tweets.up.railway.app/
+link: https://dyooreen-tweets.up.railway.app/
 workType: image
 cover: tweets.webp
 tags: Node.js , Socket, GoogleMapsAPI, TwitterAPI

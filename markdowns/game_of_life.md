@@ -1,7 +1,7 @@
 ---
 order: 2
 title: Game Of Life
-link: https://dyoorin.github.io/game_of_life
+link: https://dyooreen.github.io/game_of_life
 workType: image
 cover: game_of_life.webp
 tags: JavaScript, P5.js
