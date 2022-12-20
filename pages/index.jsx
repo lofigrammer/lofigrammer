@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>kankhateseli</title>
+        <title>dyoorin</title>
       </Head>
 
       <div className="border-2 border-violet rounded-xl laptop:grid mobile:overflow-auto laptop:items-center laptop:justify-center laptop:grid-cols-[max-content_6rem] mobile:block">
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div className="mobile:mt-8 laptop:mt-0 bg-[#002b36] laptop:p-6 rounded-2xl mobile:h-28 laptop:h-[calc(200px+3rem)]  shadow-card grid items-center hover:p-16">
               <h2 className="font-fredoka-one  text-white text-center text-3xl">
-                kankhateseli
+                dyoorin
               </h2>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Home = () => {
         <div className="mobile:h-24 mobile:mt-8 laptop:mt-0 laptop:mb-40 laptop:h-[21rem] flex laptop:flex-col justify-between items-center shadow-card bg-[#002b36] p-6 rounded-2xl laptop:hover:px-20">
           <div>
             <a
-              href="https://github.com/kankhateseli/"
+              href="https://github.com/dyoorin/"
               rel="noreferrer"
               target={"_blank"}
             >
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
           <div>
             <a
-              href="https://www.linkedin.com/in/kankhateseli/"
+              href="https://www.linkedin.com/in/dyoorin/"
               rel="noreferrer"
               target={"_blank"}
             >
@@ -62,7 +62,7 @@ const Home = () => {
           </div>
           <div>
             <a
-              href="https://twitter.com/kankhateseli/"
+              href="https://twitter.com/dyoorin/"
               rel="noreferrer"
               target={"_blank"}
             >
@@ -70,17 +70,13 @@ const Home = () => {
             </a>
           </div>
           <div>
-            <a
-              href="https://t.me/kankhateseli/"
-              rel="noreferrer"
-              target={"_blank"}
-            >
+            <a href="https://t.me/dyoorin/" rel="noreferrer" target={"_blank"}>
               <Telegram />
             </a>
           </div>
           <div>
             <a
-              href="http://instagram.com/kankhateseli/"
+              href="http://instagram.com/dyoorin/"
               rel="noreferrer"
               target={"_blank"}
             >

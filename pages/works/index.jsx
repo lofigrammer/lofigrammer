@@ -10,7 +10,7 @@ const Works = ({ projects }) => {
   return (
     <>
       <Head>
-        <title>kankhateseli - Works</title>
+        <title>dyoorin - Works</title>
       </Head>
       <div className="grid gap-6 border-1 border-violet rounded-2xl overflow-auto h-full">
         {projects.map(

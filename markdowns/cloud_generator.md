@@ -1,7 +1,7 @@
 ---
 order: 8
 title: Cloud Generator
-link: https://kankhateseli.github.io/cloud_generator
+link: https://dyoorin.github.io/cloud_generator
 workType: image
 cover: cloud_generator.webp
 tags: JavaScript, P5.js

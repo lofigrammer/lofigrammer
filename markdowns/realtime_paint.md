@@ -1,7 +1,7 @@
 ---
 order: 4
 title: Realtime Paint
-link: https://kankhateseli-realtimepaint.up.railway.app
+link: https://dyoorin-realtimepaint.up.railway.app
 workType: image
 cover: realtime_paint.webp
 tags: JavaScript , Node.js, Socket
