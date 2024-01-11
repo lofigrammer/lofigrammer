@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       gridTemplateRows: {
-        "layout-mobile": "9rem calc(100vh - 18rem) 9rem",
+        "layout-mobile": "9rem calc(100vh - 10.5rem)",
         "layout-laptop": "9rem calc(100vh - 9rem)",
       },
       fontFamily: {
