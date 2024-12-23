@@ -7,4 +7,4 @@ cover: tweets.webp
 tags: Node.js , Socket, GoogleMapsAPI, TwitterAPI
 ---
 
-With this app people can enter some location and see near tweets
+This app lets users enter a location to see nearby tweets.

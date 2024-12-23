@@ -5,8 +5,7 @@ const Header = ({ menu }) => {
   const router = useRouter();
 
   return (
-    <div className="grid items-center bg-[#595ead] px-6">
-      <header className="border-4 border-violet rounded-2xl flex laptop:justify-between mobile:justify-center items-center p-5 h-24 shadow-card bg-[#002b36]">
+      <header className="oo-border-color oo-background-color-primary ee-border-style_solid oo-border-width oo-border-radius flex laptop:justify-between mobile:justify-center items-center oo-padding_2 oo-margin">
         <div>
           <h1 className="text-2xl tracking-widest font-fredoka-one text-white uppercase">
             Aram Khachatryan
@@ -21,14 +20,13 @@ const Header = ({ menu }) => {
               >
                 <Link href={path}>{name}</Link>
                 {path === router.asPath && (
-                  <div className="rounded-3xl w-2 h-2 bg-violet m-auto border-b-4 border-violet"></div>
+                  <div className="oo-border-radius oo-background-color-primary  w-4 h-4  m-auto oo-border-width oo-border-color"></div>
                 )}
               </li>
             ))}
           </ul>
         </div>
       </header>
-    </div>
   );
 };
 export default Header;

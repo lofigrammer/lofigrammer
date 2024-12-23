@@ -2,7 +2,7 @@
 order: 0
 title: Perlin Noise And Flowfields
 link: https://dyooreen.github.io/perlinnoise_and_flowfields/
-workType: image
+workType: link
 cover: perlinnoise_and_flowfields.webp
 tags: JavaScript, P5.js
 ---

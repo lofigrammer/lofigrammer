@@ -10,9 +10,12 @@ const Document = () => (
 
       <meta name="robots" content="index, follow" />
     </Head>
-    <body className="bg-[#595ead] overflow-hidden">
+    <body className="ee-background-color_black">
       <Main />
+
+      <div id="blackSquareUI"></div>
       <NextScript />
+
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -24,6 +27,8 @@ const Document = () => (
         src="https://www.google-analytics.com/analytics.js"
         strategy="afterInteractive"
       />
+      <Script strategy="afterInteractive"  type="module" src="/_next/static/look.js" />
+
     </body>
   </Html>
 );

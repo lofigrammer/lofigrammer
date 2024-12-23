@@ -1,8 +1,11 @@
+import "@blacksquareui/look/dist/look.css"
 import "../styles/globals.css";
+import "../styles/index.css";
 import Header from "../components/Header";
 import DotRing from "../components/DotRing";
 import Link from "next/link";
 import MobileMenu from "../components/MobileMenu";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   const menu = [
@@ -12,14 +15,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <DotRing />
-      <div className="relative grid overflow-hidden mobile:grid-rows-layout-mobile laptop:grid-rows-layout-laptop">
-        <div className="mobile:hidden laptop:grid">
+
+      <div className="relative ">
           <Header menu={menu} />
-        </div>
         <div className="laptop:hidden mobile:grid">
           <MobileMenu menu={menu} />
         </div>
-        <div className="h-full grid mobile:mx-6 border-violet rounded-2xl border-4  laptop:w-3/4 laptop:m-auto">
+        <div className=" grid mobile:mx-6  laptop:w-3/4 laptop:m-auto">
           <Component {...pageProps} />
         </div>
       </div>

@@ -2,7 +2,7 @@
 order: 8
 title: Cloud Generator
 link: https://dyooreen.github.io/cloud_generator
-workType: image
+workType: link
 cover: cloud_generator.webp
 tags: JavaScript, P5.js
 ---

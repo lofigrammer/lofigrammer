@@ -4,7 +4,7 @@ const Twitter = () => {
       type="button"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
-      className="inline-block p-4 text-white bg-[#002b36] font-medium text-xs leading-tight uppercase rounded-2xl focus:ring-0 active:shadow-lg hover:px-12"
+      className="inline-block p-4 text-white oo-background-color-primary font-medium text-xs leading-tight uppercase rounded-2xl focus:ring-0 active:shadow-lg hover:px-12"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

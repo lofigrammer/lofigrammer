@@ -15,10 +15,10 @@ const Home = () => {
         <title>dyooreen</title>
       </Head>
 
-      <div className="border-2 border-violet rounded-xl laptop:grid mobile:overflow-auto laptop:items-center laptop:justify-center laptop:grid-cols-[max-content_6rem] mobile:block">
+      <div className=" laptop:grid mobile:overflow-auto laptop:items-center laptop:justify-center laptop:grid-cols-[max-content_6rem] mobile:block">
         <div className="laptop:mb-40 laptop:p-6 laptop:pr-4 ">
           <div className="mobile:grid laptop:flex laptop:items-center ">
-            <div className="laptop:mr-4 bg-[#002b36] p-6 shadow-card rounded-2xl flex laptop:hover:p-10  mobile:grid mobile:justify-center">
+            <div className="laptop:mr-4 oo-background-color-primary  oo-border-color oo-border-width oo-border-radius p-6  rounded-2xl flex laptop:hover:p-10  mobile:grid mobile:justify-center">
               <div className="relative laptop:w-[200px] laptop:h-[200px] mobile:w-[70vw] mobile:h-[70vw]">
                 <Image
                   className="rounded-full"
@@ -29,19 +29,19 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="mobile:mt-8 laptop:mt-0 bg-[#002b36] laptop:p-6 rounded-2xl mobile:h-28 laptop:h-[calc(200px+3rem)]  shadow-card grid items-center hover:p-16">
+            <div className="mobile:mt-8 laptop:mt-0 oo-background-color-primary  oo-border-color oo-border-width oo-border-radius laptop:p-6 rounded-2xl mobile:h-28 laptop:h-[calc(200px+3rem)] grid items-center hover:p-16">
               <h2 className="font-fredoka-one  text-white text-center text-3xl">
                 dyooreen
               </h2>
             </div>
           </div>
-          <div className="grid laptop:mt-4 bg-[#002b36] laptop:p-6 rounded-2xl laptop:hover:py-10 shadow-card mobile:mt-8 mobile:p-6">
+          <div className="grid laptop:mt-4 oo-background-color-primary  oo-border-color oo-border-width oo-border-radius laptop:p-6 rounded-2xl laptop:hover:py-10 mobile:mt-8 mobile:p-6">
             <div className="tracking-widest text-white font-fredoka-one text-center mobile:text-lg">
-              <p>The Future Is Unpredictable</p>
+              <p>...and today is a gift</p>
             </div>
           </div>
         </div>
-        <div className="mobile:h-24 mobile:mt-8 laptop:mt-0 laptop:mb-40 laptop:h-[21rem] flex laptop:flex-col justify-between items-center shadow-card bg-[#002b36] p-6 rounded-2xl laptop:hover:px-20">
+        <div className="mobile:h-24 mobile:mt-8 laptop:mt-0 laptop:mb-40 laptop:h-[21rem] flex laptop:flex-col justify-between items-center oo-background-color-primary  oo-border-color oo-border-width oo-border-radius p-6 rounded-2xl laptop:hover:px-20">
           <div>
             <a
               href="https://github.com/dyooreen/"

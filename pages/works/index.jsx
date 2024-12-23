@@ -5,38 +5,41 @@ import fs from "fs";
 import path from "path";
 import * as matter from "gray-matter";
 import Link from "next/link";
-
+import Delayed from "../../components/Delayed";
 const Works = ({ projects }) => {
   return (
     <>
       <Head>
         <title>dyooreen - Works</title>
       </Head>
-      <div className="grid gap-6 border-1 border-violet rounded-2xl overflow-auto h-full">
+      <div className="grid gap-6  ">
         {projects.map(
           ({ id, slug, title, link, content, workType, cover, tags }, i) => {
             return (
               <div key={id} className="grid items-start ">
                 <div
                   className={
-                    "laptop:flex mobile:grid mobile:gap-6 items-center " +
+                    "laptop:flex mobile:grid items-center " +
                     (i % 2 == 0 ? "flex-row-reverse" : "")
                   }
                 >
                   <div
                     className={
-                      "relative -z-10 border-[#002b36] bg-[#002b36] grid items-center border-2 rounded-2xl overflow-hidden laptop:w-2/3 laptop:h-96 mobile:h-56  mobile:w-full "
+                      "relative oo-background-color-primary oo-border-color oo-border-width ee-border-style_solid grid items-center oo-border-radius laptop:w-2/3 laptop:h-96 mobile:h-56  mobile:w-full " + (i % 2 == 0 ? " oo-margin-left " : " oo-margin-right ")
                     }
                   >
                     {workType === "link" ? (
+                           <Delayed waitBeforeShow={1000}>
+
                       <iframe
                         src={link}
-                        className="bg-white"
-                        width={200}
-                        height={200}
+                        className="bg-white oo-border-radius"
+                        width={"100%"}
+                        height={"100%"}
                         frameBorder="0"
                         title={title}
                       ></iframe>
+                      </Delayed>
                     ) : (
                       <Image
                         src={"/" + cover}
@@ -48,28 +51,32 @@ const Works = ({ projects }) => {
                   </div>
                   <div
                     className={
-                      "mobile:row-start-1	 mobile:h-auto laptop:h-96 p-6 text-center shadow-card  justify-center  text-5xl font-Roboto tracking-widest w-full bg-[#002b36] rounded-2xl flex items-start text-white laptop:" +
+                      "mobile:row-start-1 oo-background-color-primary	 mobile:h-auto p-6 text-center  justify-center  text-5xl font-Roboto tracking-widest w-full oo-border-color oo-border-width ee-border-style_solid oo-border-radius flex items-start text-white laptop:" +
                       (i % 2 == 0 ? "mr-6" : "ml-6")
                     }
                   >
                     <div className="grid w-full">
-                      <div className="flex justify-between items-center  border-4 bg-[#002b36] border-violet  rounded-lg">
-                        <div className="text-2xl grid h-full w-full pl-4 items-center justify-start bg-[#002b36] rounded-lg">
+                      <div
+                        className="flex justify-between items-center ee-background-color_black  oo-border-color oo-border-width ee-border-style_solid oo-border-radius">
+                        <div
+                          className="text-2xl grid h-full w-full oo-padding items-center justify-start ">
                           {title}
                         </div>
                         <div className="flex justify-center">
-                          <span className="hover:text-white hover:bg-transparent  cursor-pointer bg-[#002b36] text-sm flex  p-4   uppercase">
-                            <Link href={link}>See </Link>
+                          <span
+                            className="hover:text-white hover:bg-transparent  cursor-pointer text-sm flex  p-4   uppercase">
+                            <a href={link} rel="noreferrer" target="_blank">See </a>
                           </span>
                         </div>
                       </div>
-                      <div className="mobile:mb-0 p-8  laptop:h-[15.7rem] mobile:h-auto border-violet border-4 rounded-lg my-6 overflow-auto">
+                      <div
+                        className="mobile:mb-0 oo-padding  ee-background-color_black laptop:h-[15.7rem] mobile:h-auto oo-border-color oo-border-width ee-border-style_solid oo-border-radius my-6 overflow-auto">
                         <p className="text-left text-base tracking-normal whitespace-pre-line">
                           <span className="flex">
                             {tags.split(",").map((i, j) => (
                               <span
                                 key={j}
-                                className="mr-2 border-2 p-2 rounded-md"
+                                className="mr-2 oo-border p-2 oo-border-radius ee-border-style_solid oo-border-color oo-border-width"
                               >
                                 {" "}
                                 {i}{" "}
@@ -92,14 +99,12 @@ const Works = ({ projects }) => {
 };
 
 export async function getStaticProps() {
-  let projects = [];
   const MDS_PATHS = path.join("markdowns");
   const files = fs.readdirSync(MDS_PATHS);
 
-  files.map((file, i) => {
+  const projects = files.map((file, i) => {
     const content = matter(fs.readFileSync(`${MDS_PATHS}/${file}`, "utf8"));
-
-    projects.push({
+    return {
       id: i,
       slug: file.replace(".md", ""),
       title: content.data.title,
@@ -109,9 +114,10 @@ export async function getStaticProps() {
       workType: content.data.workType,
       cover: content.data.cover,
       tags: content.data.tags,
-    });
-  });
-  projects = projects.sort((a, b) => a.order - b.order);
+    };
+  })
+  .sort((a, b) => a.order - b.order)
+
   return {
     props: {
       projects,

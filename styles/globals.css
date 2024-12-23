@@ -8,4 +8,5 @@
 * {
   transition: 0.3s;
   cursor: none !important;
+  box-sizing: border-box;
 }

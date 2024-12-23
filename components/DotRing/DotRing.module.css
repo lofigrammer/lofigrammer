@@ -5,8 +5,8 @@
   width: 20px;
   height: 20px;
   /* border: 2px solid rgba(31, 30, 30, 0.808); */
-  background-color: #d33682;
-  box-shadow: 0 0 26px #d23682;
+  background-color: var(--oo-border-color);
+  box-shadow: 0 0 26px var(--oo-background-color-primary) ;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   -webkit-transition-duration: 0s;
@@ -25,6 +25,7 @@
   width: 8px;
   height: 8px;
   background-color: black;
+  border: var(--oo-border-width) solid var(--oo-border-color);
   border-radius: 100%;
   transform: translate(-50%, -50%);
   z-index: 999;

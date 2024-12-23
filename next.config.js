@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 
+// import CopyPluin from "copy-webpack-plugin";
+const CopyPlugin = require("copy-webpack-plugin")
+
 module.exports = {
+
   async headers() {
     return [
       {
@@ -21,5 +25,17 @@ const nextConfig = {
     loader: "akamai",
     path: "/",
   },
+  webpack: (config) => {
+    config.devServer = { writeToDisk: true };
+    config.plugins.push(
+      new CopyPlugin({
+        patterns: [
+          { from: "node_modules/@blacksquareui/look/dist", to: "static/" },
+        ],
+      }),
+    )
+
+    return config
+  }
 };
 module.exports = nextConfig;
