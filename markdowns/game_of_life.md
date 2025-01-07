@@ -5,6 +5,7 @@ link: https://dyooreen.github.io/game_of_life#black
 workType: link
 cover: game_of_life.webp
 tags: JavaScript, P5.js
+isPublic: 1
 ---
 
 This is my version of Game of Life.

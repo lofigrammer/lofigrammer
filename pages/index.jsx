@@ -103,7 +103,6 @@ export async function getStaticProps() {
       content: content.content,
     });
   });
-
   return {
     props: {
       projects,

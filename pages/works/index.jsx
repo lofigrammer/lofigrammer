@@ -6,7 +6,9 @@ import path from "path";
 import * as matter from "gray-matter";
 import Link from "next/link";
 import Delayed from "../../components/Delayed";
+import Github from "../../components/icons/Github";
 const Works = ({ projects }) => {
+  console.log(projects)
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ const Works = ({ projects }) => {
       </Head>
       <div className="grid gap-6  ">
         {projects.map(
-          ({ id, slug, title, link, content, workType, cover, tags }, i) => {
+          ({ id, isPublic, title, link, content, workType, cover, tags }, i) => {
             return (
               <div key={id} className="grid items-start ">
                 <div
@@ -29,16 +31,16 @@ const Works = ({ projects }) => {
                     }
                   >
                     {workType === "link" ? (
-                           <Delayed waitBeforeShow={1000}>
+                      <Delayed waitBeforeShow={1000}>
 
-                      <iframe
-                        src={link}
-                        className="bg-white oo-border-radius"
-                        width={"100%"}
-                        height={"100%"}
-                        frameBorder="0"
-                        title={title}
-                      ></iframe>
+                        <iframe
+                          src={link}
+                          className="bg-white oo-border-radius"
+                          width={"100%"}
+                          height={"100%"}
+                          frameBorder="0"
+                          title={title}
+                        ></iframe>
                       </Delayed>
                     ) : (
                       <Image
@@ -63,8 +65,17 @@ const Works = ({ projects }) => {
                           {title}
                         </div>
                         <div className="flex justify-center">
+
+                          {isPublic === 1 ?
+                            <span
+                              className="hover:text-white hover:bg-transparent  cursor-pointer text-sm flex  p-4   uppercase">
+                              <a href={"https://github.com/dyooreen/" + link.split("/")[3]} rel="noreferrer" target="_blank">
+                                <Github />
+                              </a>
+                            </span>
+                            : null}
                           <span
-                            className="hover:text-white hover:bg-transparent  cursor-pointer text-sm flex  p-4   uppercase">
+                            className="hover:text-white hover:bg-transparent  cursor-pointer text-sm flex  p-4   uppercase items-center">
                             <a href={link} rel="noreferrer" target="_blank">See </a>
                           </span>
                         </div>
@@ -114,9 +125,10 @@ export async function getStaticProps() {
       workType: content.data.workType,
       cover: content.data.cover,
       tags: content.data.tags,
+      isPublic: content.data.isPublic
     };
   })
-  .sort((a, b) => a.order - b.order)
+    .sort((a, b) => a.order - b.order)
 
   return {
     props: {

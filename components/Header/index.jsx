@@ -5,7 +5,7 @@ const Header = ({ menu }) => {
   const router = useRouter();
 
   return (
-      <header className="oo-border-color oo-background-color-primary ee-border-style_solid oo-border-width oo-border-radius flex laptop:justify-between mobile:justify-center items-center oo-padding_2 oo-margin">
+      <header className="oo-border-color sm__oo-background-color-secondary oo-background-color-primary ee-border-style_solid oo-border-width oo-border-radius flex laptop:justify-between mobile:justify-center items-center oo-padding_2 oo-margin">
         <div>
           <h1 className="text-2xl tracking-widest font-fredoka-one text-white uppercase">
             Aram Khachatryan

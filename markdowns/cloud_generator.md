@@ -5,6 +5,7 @@ link: https://dyooreen.github.io/cloud_generator
 workType: link
 cover: cloud_generator.webp
 tags: JavaScript, P5.js
+isPublic: 1
 ---
 
 This Image was created with Perlin noise algorithm

@@ -25,7 +25,7 @@
                 "-bottom",
                 "-left"
             ],
-            "val": 1,
+            "val": 1.2,
             "min": 0,
             "max": 3,
             "step": 0.1
@@ -53,7 +53,7 @@
             "direction": [
                 ""
             ],
-            "val": 0.1,
+            "val": 0.17,
             "min": 0,
             "max": 1,
             "step": 0.01
@@ -65,7 +65,7 @@
             "direction": [
                 ""
             ],
-            "val": 0.1,
+            "val": 0.94,
             "min": 0,
             "max": 3,
             "step": 0.01
@@ -74,19 +74,13 @@
             "name": "background-color-primary",
             "type": "color",
             "property": "background-color",
-            "val": "black"
-        },
-        {
-            "name": "background-color-secondary",
-            "type": "color",
-            "property": "background-color",
-            "val": "black"
+            "val": "#29794a"
         },
         {
             "name": "background-color-success",
             "type": "color",
             "property": "background-color",
-            "val": "blue"
+            "val": "#ffffff"
         },
         {
             "name": "background-color-danger",
@@ -98,7 +92,7 @@
             "name": "border-color",
             "type": "color",
             "property": "border-color",
-            "val": "black"
+            "val": "#ffffff"
         },
         {
             "name": "text-color-primary",
@@ -110,7 +104,7 @@
             "name": "text-color-success",
             "type": "color",
             "property": "color",
-            "val": "blue"
+            "val": "#54e009"
         },
         {
             "name": "text-color-danger",
